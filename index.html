@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WeThinkCode_</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <div v-for="user in users">
+        {{ user.name }}:
+        <span class="lighten">
+      {{ user.email }}
+    </span>
+    </div>
+</div>
+</body>
+</html>
+
+<script src="js/app.js"></script>
