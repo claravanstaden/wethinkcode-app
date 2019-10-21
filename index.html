@@ -9,60 +9,6 @@
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
 </head>
 <body>
-<div id="app" class="container mt-10">
-    <div class="navbar navbar-dark bg-dark box-shadow">
-        <div class="container d-flex justify-content-between">
-            <a href="#" class="navbar-brand d-flex align-items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
-                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
-                    <circle cx="12" cy="13" r="4"></circle>
-                </svg>
-                <strong><h1>WeThinkCode_ Students</h1></strong>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
-                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <div class="card">
-                <div class="card-header">New Student</div>
-
-                <div class="card-body">
-                    <form @submit="createUser">
-                        <strong>Name:</strong>
-                        <input type="text" class="form-control" v-model="name">
-                        <strong>Email:</strong>
-                        <input type="text" class="form-control" v-model="email">
-                        <strong>Password:</strong>
-                        <input type="password" class="form-control" v-model="password">
-                        <button class="btn btn-success">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
-    <div class="row">
-        <div class="col">
-            <div class="card">
-                <div class="card-header">Current Students</div>
-
-                <div class="card-body">
-                    <div v-for="user in users">
-                        <h3>{{ user.name }}</h3>
-                        <div class="text-muted">
-                        {{ user.email }}</div>
-                        <hr>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 </body>
 </html>
 
